@@ -1,0 +1,56 @@
+.form{
+  &__input{
+    width: 100%;
+    font-weight: bold;
+    font-size: $font-base;
+    border: none;
+    &:focus{
+      outline: none;
+    }
+  }
+  .form__plusGroup{
+    position: relative;
+    
+    &--workMode{
+      &:after{
+        color: $color-danger;
+      }
+      .form__input{
+        color: $color-danger;
+      }
+      ::placeholder{
+        color: $color-danger;
+      }
+    }
+    &--breakMode{
+      &:after{
+        color: $color-success;
+      }
+      .form__input{
+        color: $color-success;
+      }
+      ::placeholder{
+        color: $color-success;
+      }
+    }
+
+    &:after{
+      content: "+";
+      display: inline-block;
+      position: absolute;
+      top: 13px;
+      right: 16px;
+      font-size: 26px;
+      cursor: pointer;
+    }
+    .form__input{
+      background-color: $color-light;
+      font-style: italic;
+      height: 56px;
+      padding-left: 16px;
+    }
+    ::placeholder{
+      font-weight: bold;
+    }
+  }
+}

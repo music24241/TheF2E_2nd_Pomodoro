@@ -1,0 +1,26 @@
+.p-analytics{
+  .focusTimeList{
+    margin-top: 20px;
+    display: flex;
+    &__item{
+      width: 50%;
+      &__title{
+
+      }
+      &__desc{
+        font-size: $font-base;
+        color: rgba($color-light,0.2);
+        margin-top: 10px;
+        span{
+          color: $color-danger;
+          font-size: 64px;
+          margin-right: 10px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .h3:not(:first-child){
+    margin-top: 60px;
+  }
+}

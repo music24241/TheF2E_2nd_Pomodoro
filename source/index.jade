@@ -1,0 +1,59 @@
+extend _layout.jade
+
+block meta
+  - var title="首頁"
+  include partials/_meta.jade
+
+block content
+  .p-index.wrap.p-index--workMode<!--.p-index--breakMode-->
+    .p-index__main
+      .playCircle
+        .playCircle__inner
+          i.material-icons play_circle_filled
+          .square
+      .container
+        .content
+          .form
+            .form__plusGroup.form__plusGroup--workMode<!--.form__plusGroup--breakMode-->
+              input.form__input(type="text",placeholder="ADD A NEW MISSION…")
+          ul.todoList
+            li.todoList__item.todoList__item--active
+              .todoList__item__title
+                label
+                  input(type="radio", name="todoRadio",checked="checked")
+                  i.material-icons.uncheck.md-48 radio_button_unchecked
+                  i.material-icons.checked.md-48 radio_button_checked
+                  span THE FIRST THING TO DO TODAY
+                //- i.material-icons.md-48 radio_button_unchecked
+                //- span THE FIRST THING TO DO TODAY
+              .todoList__item__timer 25:00
+            //-   i.material-icons check_circle_outline
+            each item in ['SECOND', 'THIRD', 'FORTH']
+              li.todoList__item
+                .todoList__item__title
+                  label
+                      input(type="radio", name="todoRadio",checked="checked")
+                      i.material-icons.uncheck radio_button_unchecked
+                      i.material-icons.checked radio_button_checked
+                      span THE #{item} THING TO DO TODAY
+                  i.material-icons.todoList__item__title__playCircleIcon play_circle_outline
+            //- li.todoList__item.todoList__item--active
+            //-   .todoList__item__title
+            //-     i.material-icons.md-48 panorama_fish_eye
+            //-     span THE FIVE THING TO DO TODAY
+            //-   .todoList__item__timer 25:00
+            li.todoList__more
+              a(href="todolist.html") MORE
+    .p-index__menu 
+      .container
+        nav
+          a(href="todolist.html")
+            i.material-icons.md-36 list
+          a(href="analytics.html")
+            i.material-icons.md-36 insert_chart
+          a(href="ringtones.html")
+            i.material-icons.md-36 library_music
+        .sign POMODORO
+
+
+

@@ -1,0 +1,21 @@
+.btn{
+  text-align: center;
+  border: 0;
+  padding: 20px 24px;
+  cursor: pointer;
+}
+
+.btn--block{
+  display: block;
+  width: 100%;
+}
+
+.btn--hope{
+  background-color: $color-hope;
+  color: $color-primary;
+}
+
+.btn--secondary{
+  background-color:$color-secondary;
+  color: $color-primary;
+}

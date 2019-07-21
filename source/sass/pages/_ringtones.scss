@@ -1,0 +1,51 @@
+.p-ringtones{
+  .radioList{
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+    margin-top: 16px;
+    &__item{
+      margin-top: 8px;
+      margin-bottom: 8px;
+      width: calc( 100% / 3);
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+
+      &:hover{
+        input ~ .radioList__item__uncheck{
+          display: none;
+        }
+        input ~ .radioList__item__checked{
+          display: block;
+        }
+      }
+
+      input{
+        position: absolute;
+        opacity: 0;
+      }
+      
+      &__checked{
+        color: $color-danger;
+        display: none;
+      }
+
+      input:checked {
+        & ~ .radioList__item__uncheck {
+          display: none;
+        }
+        & ~ .radioList__item__checked{
+          display: block;
+        }
+      }
+
+      span{
+        margin-left: 4px;
+      }
+    }
+  }
+}

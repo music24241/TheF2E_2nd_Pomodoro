@@ -1,0 +1,52 @@
+extends _layout.jade
+
+block meta
+  - var title="analytics"
+  include partials/_meta.jade
+
+block content
+  .p-analytics.insidePage
+    .container
+      .countdownTimer
+        .countdownTimer__playCircle
+          .countdownTimer__playCircle__innerCircle
+          i.material-icons play_arrow
+        .countdownTimer__timer 25:00
+        .countdownTimer__description THE FIRST THING TO DO TODAY
+      nav.navbar
+        a(href="todolist.html").navbar__item
+          i.material-icons.md-36 list
+          | TO-DO LIST
+        a(href="analytics.html").navbar__item.navbar__item--active
+          i.material-icons.md-36 insert_chart
+          | ANALYTICS
+        a(href="ringtones.html").navbar__item
+          i.material-icons.md-36 library_music
+          | RINGTONES
+      .mainRow
+        .content
+          h3.h3 
+            span FOCUS TIME
+          ul.focusTimeList
+            li.focusTimeList__item
+              h5.focusTimeList__item__title TODAY
+              .focusTimeList__item__desc
+                span 20
+                | /TOMATO
+
+            li.focusTimeList__item
+              h5.focusTimeList__item__title WEEK
+              .focusTimeList__item__desc
+                span 108
+                | /TOMATO
+          h3.h3 
+            span CHART
+            .dateSection
+              i.material-icons chevron_left
+              span 2019.7.1 - 2019.7.7
+              i.material-icons chevron_right
+      .close
+        a(href="index.html")
+          i.material-icons.md-48 clear
+        .sign POMODORO
+

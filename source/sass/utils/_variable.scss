@@ -1,0 +1,25 @@
+/**
+* color
+**/
+$color-primary: #003164;
+$color-secondary: #E5F3FF;
+$color-success: #00A7FF;
+$color-danger: #FF4384;
+$color-warning: #FFEDF7;
+$color-light: white;
+
+/**
+* typography
+**/
+$font-base: 1rem !default;
+$font-medium: $font-base*1.5; //24
+$font-big: $font-base*2.25; //36
+// $font-large: $font-base*1.5; //24
+
+/**
+* screen
+**/
+$big-screen: 1110px;
+// $medium-screen: 790px;
+// $small-screen: 650px;
+// $small-mobile: 375px;
