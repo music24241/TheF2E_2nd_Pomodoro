@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>首頁</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="css/all.css"/>
+  </head>
+  <body>
+    <div class="p-index wrap p-index--workMode"><!--.p-index--breakMode-->
+      <div class="p-index__main">
+        <div class="playCircle">
+          <div class="playCircle__inner"><i class="material-icons">play_circle_filled</i>
+            <div class="square"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="content">
+            <div class="form">
+              <div class="form__plusGroup form__plusGroup--workMode"><!--.form__plusGroup--breakMode-->
+                <input type="text" placeholder="ADD A NEW MISSION…" class="form__input"/>
+              </div>
+            </div>
+            <ul class="todoList">
+              <li class="todoList__item todoList__item--active">
+                <div class="todoList__item__title">
+                  <label>
+                    <input type="radio" name="todoRadio" checked="checked"/><i class="material-icons uncheck md-48">radio_button_unchecked</i><i class="material-icons checked md-48">radio_button_checked</i><span>THE FIRST THING TO DO TODAY</span>
+                  </label>
+                </div>
+                <div class="todoList__item__timer">25:00</div>
+              </li>
+              <li class="todoList__item">
+                <div class="todoList__item__title">
+                  <label>
+                    <input type="radio" name="todoRadio" checked="checked"/><i class="material-icons uncheck">radio_button_unchecked</i><i class="material-icons checked">radio_button_checked</i><span>THE SECOND THING TO DO TODAY</span>
+                  </label><i class="material-icons todoList__item__title__playCircleIcon">play_circle_outline</i>
+                </div>
+              </li>
+              <li class="todoList__item">
+                <div class="todoList__item__title">
+                  <label>
+                    <input type="radio" name="todoRadio" checked="checked"/><i class="material-icons uncheck">radio_button_unchecked</i><i class="material-icons checked">radio_button_checked</i><span>THE THIRD THING TO DO TODAY</span>
+                  </label><i class="material-icons todoList__item__title__playCircleIcon">play_circle_outline</i>
+                </div>
+              </li>
+              <li class="todoList__item">
+                <div class="todoList__item__title">
+                  <label>
+                    <input type="radio" name="todoRadio" checked="checked"/><i class="material-icons uncheck">radio_button_unchecked</i><i class="material-icons checked">radio_button_checked</i><span>THE FORTH THING TO DO TODAY</span>
+                  </label><i class="material-icons todoList__item__title__playCircleIcon">play_circle_outline</i>
+                </div>
+              </li>
+              <li class="todoList__more"><a href="todolist.html">MORE</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="p-index__menu"> 
+        <div class="container">
+          <nav><a href="todolist.html"><i class="material-icons md-36">list</i></a><a href="analytics.html"><i class="material-icons md-36">insert_chart</i></a><a href="ringtones.html"><i class="material-icons md-36">library_music</i></a></nav>
+          <div class="sign">POMODORO</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
